@@ -1,5 +1,4 @@
-public class Fixed implements Runnable {
-   @Override
+public class Fixed {
    public void run(String[] args) {
       for (int i = 0; i < 100; i++) {
          System.out.println(i);
