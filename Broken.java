@@ -1,4 +1,5 @@
-public class Broken {
+public class Broken implements Runnable {
+   @Override
    public void run() throws Exception {
       String arg = "ex";
 
