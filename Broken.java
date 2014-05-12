@@ -1,16 +1,14 @@
 public class Broken {
-   public void run(String[] args) throws Exception {
-      for (String arg : args) {
-         System.out.println(arg);
-      }
+   public void run() throws Exception {
+      String arg = "ex";
 
-      if (args[0].equals("ex")) {
+      if (arg.equals("ex")) {
          throw new Exception("ex was passed!");
       }
    }
 
    public static void main(String[] args) throws Exception {
       System.out.println("This is a great class.");
-      new Broken().run(args);
+      new Broken().run();
    }
 }
